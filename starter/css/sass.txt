@@ -1,0 +1,41 @@
+Lecture 23:
+
+Sass is a CSS preprocessor, an extension of CSS that adds power and elegance to the basic language.
+Fixes the messiness of having a single CSS file. Breaks thousands of lines of code into small reusable chunks
+
+Features:
+-Variables: reusable values such as colors, font-sizes, spacing
+-Nesting: nest selectors inside of one another
+-Operators
+-Partials and imports: Importing CSS files into one file
+-Mixins: To write reusable pieces of CSS code
+-Functions: produce a value that can be used, similar to mixins except for first part
+-Extends: Different selectos inherit declarations that are common to all of them
+-Control directives: Conditionals and loops
+
+
+Sass source code -> Sass compiler -> Compiled CSS code
+
+Sass syntax:/SCSS syntax:
+
+Sass:
+
+.navigation 
+    list-style: none
+    float: left
+
+    & li
+        display: inline-block
+        margin-left:30px
+
+SCSS:
+
+.navigation {
+    list-style: none;
+    float: left;
+
+    &li {
+        display: inline-block;
+        margin-left: 30px;
+    }
+}
