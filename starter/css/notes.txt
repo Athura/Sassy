@@ -1,0 +1,33 @@
+Module 3 notes:
+
+3 pillars:
+Responsive design: Beautiful on all screen sizes, standard today, NEED
+-Fluid layouts 
+-Media Queries
+-Responsive images
+-Correct units
+-Desktop first vs mobile first
+
+
+Maintainable and scalable code
+-Clean
+-Easy to understand
+-Growth
+-Reusable
+-How to organize files
+-How to name classes
+-How to structure HTML
+
+
+Web Performance
+-Faster
+-Smaller
+-Less HTTP Request
+-Less code
+-Compress code
+-Use a CSS preprocesssor
+-Less images
+-Compress those images
+
+
+How CSS works behind the scenes:

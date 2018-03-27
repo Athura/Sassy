@@ -1,0 +1,8 @@
+//Content will always be empty because we dont want anything displaying on the page
+@mixin clearfix {
+    &::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
