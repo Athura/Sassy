@@ -1,4 +1,21 @@
 /*
+ 0-600px        Phone
+ 600-900px      Tablet
+ 900-1200px     Tablet landscape
+ 1200px - 1800px Normal desktop styles apply here
+ 1800px +       Big desktop
+*/
+/*
+    $breakpoint argument choices:
+    - phone
+    - tab-port
+    - tab-land 
+    - big desktop
+
+
+    if directive is a conditional similar to how javascript conditionals work
+*/
+/*
     called a reset
     Universal header for all browsers
     border-box look up
@@ -13,6 +30,9 @@
 
 html {
   font-size: 62.5%; }
+  @media (max-width: 600px) {
+    html {
+      font-size: 50%; } }
 
 body {
   box-sizing: border-box; }
@@ -498,6 +518,9 @@ body {
   .popup:target {
     opacity: 1;
     visibility: visible; }
+  .popup:target .popup:__content {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1); }
   .popup__content {
     position: absolute;
     top: 50%;
@@ -508,7 +531,10 @@ body {
     box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
     border-radius: 3px;
     display: table;
-    overflow: hidden; }
+    overflow: hidden;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0);
+    transition: all 1s .2s; }
   .popup__left {
     width: 33.333333333%;
     display: table-cell; }
