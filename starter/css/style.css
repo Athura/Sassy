@@ -627,7 +627,7 @@ body {
   .popup:target {
     opacity: 1;
     visibility: visible; }
-  .popup:target .popup:__content {
+  .popup:target .popup__content {
     opacity: 1;
     transform: translate(-50%, -50%) scale(1); }
   .popup__content {
