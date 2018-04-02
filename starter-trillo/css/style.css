@@ -44,7 +44,9 @@ body {
 .header {
   height: 7rem;
   background-color: #fff;
-  border-bottom: var(--color-grey-light-2); }
+  border-bottom: var(--color-grey-light-2);
+  display: flex;
+  justify-content: space-between; }
 
 .content {
   display: flex; }
@@ -57,3 +59,21 @@ body {
   background-color: #fff;
   background-color: orange;
   flex: 1; }
+
+.logo {
+  height: 3.25rem; }
+
+.search {
+  background-color: tomato; }
+  .search__icon {
+    height: 2rem;
+    width: 2rem; }
+
+.user-nav {
+  background-color: darkkhaki; }
+  .user-nav__icon {
+    height: 2.25rem;
+    width: 2.25rem; }
+  .user-nav__user-photo {
+    height: 3.75rem;
+    border-radius: 50%; }
